@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math-Pro-DZ</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  text-align: center;
+  color: #172554;
+}
+header {
+  background: #123b68;
+  color: white;
+  padding: 25px 10px;
+}
+main { padding: 25px 15px; }
+.levels {
+  display: grid;
+  gap: 15px;
+  max-width: 450px;
+  margin: 25px auto;
+}
+button {
+  padding: 18px;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+  color: #123b68;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #ccd4df;
+}
+button:active { background: #dbeafe; }
+#result {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer { padding: 20px; color: #64748b; }
+</style>
+</head>
+<body>
+<header>
+<h1>Math-Pro-DZ</h1>
+<p>منصة الرياضيات للتعليم المتوسط</p>
+</header>
+<main>
+<h2>مرحباً بك في عالم الرياضيات</h2>
+<p>اختر مستواك الدراسي للبدء</p>
+<div class="levels">
+<button onclick="selectLevel('الأولى متوسط')">السنة الأولى متوسط</button>
+<button onclick="selectLevel('الثانية متوسط')">السنة الثانية متوسط</button>
+<button onclick="selectLevel('الثالثة متوسط')">السنة الثالثة متوسط</button>
+<button onclick="selectLevel('الرابعة متوسط')">السنة الرابعة متوسط</button>
+</div>
+<div id="result"></div>
+</main>
+<footer>Math-Pro-DZ © 2026</footer>
+<script>
+function selectLevel(level) {
+document.getElementById('result').innerHTML =
+'اخترت: ' + level + '<br>قريباً ستجد الدروس والتمارين.';
+}
+</script>
+</body>
+</html>
